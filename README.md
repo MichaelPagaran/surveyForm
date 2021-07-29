@@ -1,4 +1,4 @@
 # surveyForm
 
 summary:
-- this is only a practice activity on my web self-study (HTML, CSS). 
+- this is only an HTML-CSS exercise on my web self-study. 
