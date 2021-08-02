@@ -6,7 +6,7 @@ body{
     background-color: #05ada2;
     line-height: 1.6em;
 }
-.parentContainer{
+.container{
     width: 90%;
     margin: auto;
     /*border: 3px solid red;*/
@@ -17,64 +17,6 @@ body{
     min-height: 100px;
     overflow: auto;
 }
-.childContainer{
-    width: 50%;
-    float: left;
-    padding: 20px;
-    min-height: 100px;
-    /*border: 2px dotted blue;*/
-    box-sizing: border-box;
-}
-h1{
-    margin-top: 50px;
-    text-align: center;
-}
-.labels{
-    display: block;
-    text-align: right;
-    margin: 13px;
-}
-.inputs{
-    display: block;
-    text-align: left;
-    margin: 10px;
-}
-.topParagraph{
-    text-align: center;
-}
-.radio, .radioLabel{
-    display: inline-block;
-}
-.radioInputs{
-    width: 12%;
-}
-.check, .checkLabel{
-    display: inline-block;
-}
-.checkInputs{
-    width: 20%;
-}
-.fields{
-    border-radius: 5px;
-    height: 23px;
-}
-.select{
-    border-radius: 5px;
-    height: 26px;
-    padding: 5px;
-}
-.button{
-    border: none;
-    border-radius: 5px;
-    float: right;
-    height: 30px;
-    color: #ffffff;
-    background-color: #05ada2;
-}
-.button:hover{
-    background-color: aquamarine;
-    color: #333333;
-}
-.labelAfterRadio{
-    margin-top: 55px;
+@media screen and {
+    
 }

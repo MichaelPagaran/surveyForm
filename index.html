@@ -7,54 +7,10 @@
     <body>
         <h1>Survey Form</h1>
         <form action="process.php" method="GET">
-            <div class="parentContainer">
-                <p class="topParagraph">Let us know how we can improve freeCodeCamp</p>
-                <div class="childContainer">
-                    <label for="" class="labels">Name: </label>
-                    <label for="" class="labels">Email </label>
-                    <label for="" class="labels">Age: </label>
-                    <label for="" class="labels">Which option best describes your current role? </label>
-                    <label for="" class="labels">How likely is that you would recommend freeCodeCamp to a friend? </label>
-                    <label for="" class="labels labelAfterRadio">What do you like most in FCC? </label>
-                    <label for="" class="labels">Things that should be improved in the future (check all that apply):</label>
-                </div>
-                <div class="childContainer">
-                    <input type="text" name="name" class="inputs fields" placeholder="Enter your name">
-                    <input type="email" name="email" class="inputs fields" placeholder="Enter your Email">
-                    <input type="number" name="age" class="inputs fields" placeholder="Age">
-                    
-                    <select name="role" class="inputs select">
-                        <option value="student">Student</option>
-                        <option value="teacher">Teacher</option>
-                        <option value="other">Other</option>
-                    </select>
-
-                    <div class="inputs radioInputs">
-                        <input type="radio" id="recommendChoice1" class="radio" name="definitely" value="Definitely">
-                        <label for="recommendChoice1" class="radioLabel">Definitely </label>  
-                        <input type="radio" id="recommendChoice2" class="radio" name="maybe" value="Maybe">
-                        <label for="recommendChoice2" class="radioLabel">Maybe</label> 
-                        <input type="radio" id="recommendChoice3" class="radio" name="notSure" value="Not sure">
-                        <label for="recommendChoice3"class="radioLabel">Not sure</label>
-                    </div>
-                    
-                    <select name="likes" class="inputs select">
-                        <option value="food">Food</option>
-                        <option value="environment">Environment</option>
-                        <option value="other">Other</option>
-                    </select>
-
-                    <div class="inputs checkInputs">
-                        <input type="checkbox" id="improvedChoice1" class="check" name="frontEndProjects" value="Front-End Projects">
-                        <label for="improvedChoice1" class="checkLabel"> Front-End Projects</label>
-                        <input type="checkbox" id="improvedChoice2" class="check" name="backEndProjects" value="Back-End Projects">
-                        <label for="improvedChoice2" class="checkLabel"> Back-End Projects</label>
-                        <input type="checkbox" id="improvedChoice3" class="check" name="Data Visualization" value="Data Visualization">
-                        <label for="improvedChoice3" class="checkLabel"> Data Visualization</label>
-                    </div>
-
-                    <input type="submit" value="Submit" name="submit" class="button">
-                </div>
+            <div class="container">
+                <div class="labels"></div>
+                <div class="inputs"></div>   
+            </div>
             </div>
         </form>
     </body>
