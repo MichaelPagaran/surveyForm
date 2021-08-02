@@ -23,6 +23,51 @@ h1{
 .container div{
     border: 5px solid red;
 }
+.description{
+    grid-area: description;
+}
+.nameLabel{
+    grid-area: nameLabel;
+}
+.nameInput{
+    grid-area: nameInput;
+}
+.emailLabel{
+    grid-area: emailLabel;
+}
+.emailInput{
+    grid-area: emailInput;
+}
+.ageLabel{
+    grid-area: ageLabel;
+}
+.ageInput{
+    grid-area: ageInput;
+}
+.roleLabel{
+    grid-area: roleLabel;
+}
+.roleInput{
+    grid-area: roleInput;
+}
+.recommendLabel{
+    grid-area: recommendLabel;
+}
+.recommendInput{
+    grid-area: recommendInput;
+}
+.likeLabel{
+    grid-area: likeLabel;
+}
+.likeInput{
+    grid-area: likeInput;
+}
+.improveLabel{
+    grid-area: improveLabel;
+}
+.improveInput{
+    grid-area: improveInput;
+}
 @media screen and (min-width: 736px){
     .container{
         width: 90%;
@@ -40,6 +85,11 @@ h1{
         grid-template-areas: 
         ". description description ."
         ". nameLabel nameInput ."
-        ". emailLabel emailInput .";
+        ". emailLabel emailInput ."
+        ". ageLabel ageInput ."
+        ". roleLabel roleInput ."
+        ". recommendLabel recommendInput ."
+        ". likeLabel likeInput ."
+        ". improveLabel improveInput .";
     }
 }
