@@ -37,6 +37,9 @@ h1{
 
         display: grid;
         grid-template-columns: repeat(1fr 500px 500px 1fr);
-        grid-template-areas: ". description description .";
+        grid-template-areas: 
+        ". description description ."
+        ". nameLabel nameInput ."
+        ". emailLabel emailInput .";
     }
 }
