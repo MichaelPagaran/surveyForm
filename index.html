@@ -5,56 +5,79 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>Survey Form</h1>
         <form action="process.php" method="GET">
-            <div class="parentContainer">
-                <p class="topParagraph">Let us know how we can improve freeCodeCamp</p>
-                <div class="childContainer">
-                    <label for="" class="labels">Name: </label>
-                    <label for="" class="labels">Email </label>
-                    <label for="" class="labels">Age: </label>
-                    <label for="" class="labels">Which option best describes your current role? </label>
-                    <label for="" class="labels">How likely is that you would recommend freeCodeCamp to a friend? </label>
-                    <label for="" class="labels labelAfterRadio">What do you like most in FCC? </label>
-                    <label for="" class="labels">Things that should be improved in the future (check all that apply):</label>
+            <h1>Survey Form</h1>
+            <div class="container">
+                <div class="description">
+                    <p>Let us know how we can improve freeCodeCamp</p>
                 </div>
-                <div class="childContainer">
-                    <input type="text" name="name" class="inputs fields" placeholder="Enter your name">
-                    <input type="email" name="email" class="inputs fields" placeholder="Enter your Email">
-                    <input type="number" name="age" class="inputs fields" placeholder="Age">
-                    
-                    <select name="role" class="inputs select">
-                        <option value="student">Student</option>
-                        <option value="teacher">Teacher</option>
-                        <option value="other">Other</option>
-                    </select>
-
-                    <div class="inputs radioInputs">
-                        <input type="radio" id="recommendChoice1" class="radio" name="definitely" value="Definitely">
-                        <label for="recommendChoice1" class="radioLabel">Definitely </label>  
-                        <input type="radio" id="recommendChoice2" class="radio" name="maybe" value="Maybe">
-                        <label for="recommendChoice2" class="radioLabel">Maybe</label> 
-                        <input type="radio" id="recommendChoice3" class="radio" name="notSure" value="Not sure">
-                        <label for="recommendChoice3"class="radioLabel">Not sure</label>
-                    </div>
-                    
-                    <select name="likes" class="inputs select">
-                        <option value="food">Food</option>
-                        <option value="environment">Environment</option>
-                        <option value="other">Other</option>
-                    </select>
-
-                    <div class="inputs checkInputs">
-                        <input type="checkbox" id="improvedChoice1" class="check" name="frontEndProjects" value="Front-End Projects">
-                        <label for="improvedChoice1" class="checkLabel"> Front-End Projects</label>
-                        <input type="checkbox" id="improvedChoice2" class="check" name="backEndProjects" value="Back-End Projects">
-                        <label for="improvedChoice2" class="checkLabel"> Back-End Projects</label>
-                        <input type="checkbox" id="improvedChoice3" class="check" name="Data Visualization" value="Data Visualization">
-                        <label for="improvedChoice3" class="checkLabel"> Data Visualization</label>
-                    </div>
-
-                    <input type="submit" value="Submit" name="submit" class="button">
+                <div class="nameLabel">
+                    <label for="">Name: </label>
                 </div>
+                <div class="nameInput">
+                    <input type="text" id="nameInput" placeholder="Enter name here">
+                </div>
+                <div class="emailLabel">
+                    <label for="">Email: </label>
+                </div>
+                <div class="emailInput">
+                    <input type="email" id="emailInput" placeholder="Enter Email here">
+                </div>
+                <div class="ageLabel">
+                    <label for="">Age: </label>
+                </div>
+                <div class="ageInput">
+                    <input type="number" id="ageInput" placeholder="Choose age here">
+                </div>
+                <div class="roleLabel">
+                    <label for="">Which option best describes your current role? </label>
+                </div>
+                <div class="roleInput">
+                    <select name="" id="roleInput">
+                        <option value="Student"></option>
+                        <option value="Teacher"></option>
+                        <option value="Other"></option>
+                    </select>
+                </div>
+                <div class="recommendLabel">
+                    <label for="">How likely is it that you would recommend freeCodeCamp to a friend?</label>
+                </div>
+                <div class="recommendInput">
+                    <div class="radioChoices">
+                        <label for="definitelyRadio">Definitely</label>
+                        <input type="radio" name="" id="definitelyRadio" value="definitely">
+                    </div>
+                    <div class="maybeRadio">
+                        <label for="maybeRadio">Maybe</label>
+                        <input type="radio" name="" id="maybeRadio" value="maybe">
+                    </div>
+                    <div class="radioChoices">
+                        <label for="notSureRadio">Not sure</label>
+                        <input type="radio" name="" id="notSureRadio" value="notSure">
+                    </div>
+                </div>
+                <div class="likeLabel">
+                    <label for=""> What do you like most in FCC: </label>
+                </div>
+                <div class="likeInput">
+                    <select name="" id="likeInput">
+                        <option value="Food"></option>
+                        <option value="Environment"></option>
+                        <option value="Other"></option>
+                    </select>
+                </div>
+                <div class="improveLabel">
+                    <label for="">Things that should be improved in the future (Cheeck all that apply)</label>
+                </div>
+                <div class="improveInput">
+                    <input type="checkbox" class="frontEndCheck" id="frontEnd" name="vehicle1" value="Front-end Projects">
+                    <label for="" class="frontEndLabel">Front-end Projects</label><br>
+                    <input type="checkbox" class="backEndCheck" id="backEnd" name="vehicle2" value="Back-end Projects">
+                    <label for="" class="beckEndLabel">Back-end Project</label><br>
+                    <input type="checkbox" class="dataVisualizationCheck" id="data" name="vehicle3" value="Data Visualization">
+                    <label for="" class="dataVisualizationLabel">Data Visualization</label><br>
+                </div>
+            </div>
             </div>
         </form>
     </body>
